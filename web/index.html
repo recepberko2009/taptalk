@@ -1,38 +1,48 @@
+<!-- web/index.html -->
 <!DOCTYPE html>
 <html>
+
 <head>
-  <!--
-    If you are serving your web app in a path other than the root, change the
-    href value below to reflect the base path you are serving from.
-
-    The path provided below has to start and end with a slash "/" in order for
-    it to work correctly.
-
-    For more details:
-    * https://developer.mozilla.org/en-US/docs/Web/HTML/Element/base
-
-    This is a placeholder for base href that will be replaced by the value of
-    the `--base-href` argument provided to `flutter build`.
-  -->
-  <base href="$FLUTTER_BASE_HREF">
-
   <meta charset="UTF-8">
   <meta content="IE=Edge" http-equiv="X-UA-Compatible">
-  <meta name="description" content="A new Flutter project.">
+  <meta name="description" content="TapTalk">
 
-  <!-- iOS meta tags & icons -->
-  <meta name="mobile-web-app-capable" content="yes">
-  <meta name="apple-mobile-web-app-status-bar-style" content="black">
-  <meta name="apple-mobile-web-app-title" content="taptalk">
-  <link rel="apple-touch-icon" href="icons/Icon-192.png">
-
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
-
-  <title>taptalk</title>
+  <title>TapTalk</title>
   <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="favicon.png">
+
+
+  <!-- Firebase SDK -->
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-auth-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.22.0/firebase-firestore-compat.js"></script>
+
+  <script>
+    // Yeni Firebase configuration
+    const firebaseConfig = {
+      apiKey: "AIzaSyAt24-TLe2iABPrtjT9zkX_oMm4OgRnEcU",
+      authDomain: "taptalk-ad177.firebaseapp.com",
+      projectId: "taptalk-ad177",
+      storageBucket: "taptalk-ad177.firebasestorage.app",
+      messagingSenderId: "334823265078",
+      appId: "1:334823265078:web:8e3b85ec2f0c1cb8aa1997" // WEB APP ID GEREKLİ
+    };
+
+    // Initialize Firebase
+    console.log("🔥 Firebase başlatılıyor...");
+    try {
+      const app = firebase.initializeApp(firebaseConfig);
+      console.log("✅ Firebase başarıyla başlatıldı");
+      console.log("🔑 Project ID:", firebaseConfig.projectId);
+    } catch (error) {
+      console.error("❌ Firebase başlatma hatası:", error);
+    }
+  </script>
 </head>
+
 <body>
-  <script src="flutter_bootstrap.js" async></script>
+  <script src="flutter.js" defer></script>
+  <script src="main.dart.js" type="application/javascript"></script>
 </body>
+
 </html>

@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "334823265078",
+    "project_id": "taptalk-ad177",
+    "storage_bucket": "taptalk-ad177.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:334823265078:android:357f7bfb4b755bb0aa1997",
+        "android_client_info": {
+          "package_name": "com.taptalk.chat"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAt24-TLe2iABPrtjT9zkX_oMm4OgRnEcU"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
